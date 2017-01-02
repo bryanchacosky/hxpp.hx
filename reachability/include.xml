@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+    <section if="android">
+        <!-- Definition -->
+        <dependency name="reachability" path="native/android"/>
+    </section>
+    <section if="ios">
+        <!-- Definition -->
+        <ndll name="reachability" />
+
+        <!-- Dependencies -->
+        <dependency name="SystemConfiguration.framework" /> <!-- Reachability.h/m -->
+    </section>
+</project>
